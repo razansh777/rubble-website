@@ -1,0 +1,142 @@
+.quiz-container {
+    background-color: rgba(26, 31, 28, 0.95);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.quiz-container h1 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Noto Naskh Arabic', serif;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+.quiz-content {
+    background-color: rgba(230, 223, 212, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.question {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-align: right;
+    line-height: 1.6;
+}
+
+.options {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.option {
+    background-color: var(--paper-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: right;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.option:hover {
+    background-color: var(--accent-color);
+    color: var(--paper-color);
+    transform: translateY(-2px);
+}
+
+.option.correct {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.option.wrong {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.option.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#next-btn, #restart-btn {
+    background-color: var(--accent-color);
+    color: var(--paper-color);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Noto Naskh Arabic', serif;
+    margin: 1rem;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background-color: #a65c1c;
+    transform: translateY(-2px);
+}
+
+.hide {
+    display: none;
+}
+
+.result {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgba(230, 223, 212, 0.1);
+}
+
+.result.success {
+    color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .quiz-container h1 {
+        font-size: 2rem;
+    }
+
+    .quiz-info {
+        font-size: 1rem;
+    }
+
+    .question {
+        font-size: 1.2rem;
+    }
+
+    .option {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    #next-btn, #restart-btn {
+        font-size: 1.1rem;
+        padding: 0.6rem 1.5rem;
+    }
+} 

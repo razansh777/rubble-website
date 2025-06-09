@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الذاكرة | مدن فلسطين</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="memory-game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <button class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="logo.html"><img src="logor 2.png" alt="ركام" class="nav-logo"></a>
+                <ul class="nav-list">
+                    <li><a href="index.html"><i class="fas fa-home home-icon"></i></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">العاب المشروع</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="memory-game.html">لعبة الذاكرة</a></li>
+                            <li><a href="quiz-game.html">اختبر معلوماتك</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="team.html">المشرف وفريق العمل</a></li>
+                    <li><a href="about.html">حول المشروع</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="game-container">
+            <h1>لعبة الذاكرة - مدن فلسطين</h1>
+            <div class="game-info">
+                <div class="moves">الحركات: <span id="moves-count">0</span></div>
+                <div class="timer">الوقت: <span id="time">00:00</span></div>
+            </div>
+            <div class="game-board"></div>
+            <button id="start">ابدأ اللعبة</button>
+            <button id="restart" class="hide">إعادة اللعبة</button>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/19GBfTfE2P/?mibextid=wwXIfr" class="social-link social-btn" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/rubble.film?igsh=N2ZpZHprMHZjd2dq" class="social-link social-btn" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@rubble-u6q?si=8frcKTJqae84uaR0" class="social-link social-btn" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-text">
+                    <p>All Rights Reserved © 2025 Rubble</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="memory-game.js"></script>
+</body>
+</html> 
